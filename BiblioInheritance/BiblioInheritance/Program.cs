@@ -8,7 +8,8 @@ namespace BiblioInheritance
     {
         static void Main(string[] args)
         {
-
+            Resource test = new Resource("Hunger Games", "Fiction");
+            test.GetInfo();
         }
     }
 }
