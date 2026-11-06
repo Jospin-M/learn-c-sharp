@@ -1,0 +1,16 @@
+# Visual Studio
+/HelloWorld/HelloWorld/.vs
+*.user
+*.suo
+
+# .NET build output
+bin/
+obj/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
