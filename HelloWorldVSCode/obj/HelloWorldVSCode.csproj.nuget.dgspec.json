@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorld\\HelloWorld.csproj": {}
+    "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorldVSCode\\HelloWorldVSCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorld\\HelloWorld.csproj": {
+    "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorldVSCode\\HelloWorldVSCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorld\\HelloWorld.csproj",
-        "projectName": "HelloWorld",
-        "projectPath": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorld\\HelloWorld.csproj",
+        "projectUniqueName": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorldVSCode\\HelloWorldVSCode.csproj",
+        "projectName": "HelloWorldVSCode",
+        "projectPath": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorldVSCode\\HelloWorldVSCode.csproj",
         "packagesPath": "C:\\Users\\Jospin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorld\\obj\\",
+        "outputPath": "C:\\Users\\Jospin\\OneDrive\\Documents\\Coding\\C#\\learn-c-sharp\\HelloWorldVSCode\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Jospin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Jospin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
