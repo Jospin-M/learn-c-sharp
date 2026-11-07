@@ -10,6 +10,9 @@ namespace BiblioInheritance
         {
             Resource test = new Resource("Hunger Games", "Fiction");
             test.GetInfo();
+
+            Book b = new Book("Code: The Hidden Language of Computer Hardware and Software", "Non-Fiction", "Charles Petzold", 396);
+            b.GetInfo();
         }
     }
 }
