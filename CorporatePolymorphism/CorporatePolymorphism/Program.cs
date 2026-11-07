@@ -12,6 +12,19 @@ namespace CorporatePolymorphism
             h.ClockIn();
             h.Work();
             h.SubmitDailyReport();
+
+            Employee e = new Engineer();
+            e.SubmitDailyReport();
+
+            Employee e2 = new Manager();
+            e2.ClockIn();
+            e2.Work();
+            e2.SubmitDailyReport();
+
+            Employee e3 = new Intern();
+            e3.ClockIn();
+            e3.Work();
+            e3.SubmitDailyReport();
         }
     }
 }
