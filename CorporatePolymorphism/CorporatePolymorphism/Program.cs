@@ -25,6 +25,39 @@ namespace CorporatePolymorphism
             e3.ClockIn();
             e3.Work();
             e3.SubmitDailyReport();
+
+            Engineer engineer1 = (Engineer)e;
+
+            if(engineer1 != null)
+            {
+                engineer1.SubmitDailyReport();
+            }
+            else
+            {
+                Console.WriteLine("Downcast failed.");
+            }
+
+            Employee[] employees = new[] { e, e2, e3, engineer1 }; 
+        
+            foreach(Employee employee in employees)
+            {
+                employee.ClockIn();
+                employee.Work();
+                employee.SubmitDailyReport();
+
+                if(employee is Engineer)
+                {
+                    Console.WriteLine("This is an Engineer.");
+                }
+                else if(employee is Intern)
+                {
+                    Console.WriteLine("This is an Intern.");
+                }
+                else
+                {
+                    Console.WriteLine("This is a Manager");
+                }
+            }
         }
     }
 }
