@@ -6,9 +6,12 @@ namespace CorporatePolymorphism
 {
     internal class Program
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
-
+            HR h = new HR();
+            h.ClockIn();
+            h.Work();
+            h.SubmitDailyReport();
         }
     }
 }
