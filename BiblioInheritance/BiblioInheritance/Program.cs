@@ -18,6 +18,9 @@ namespace BiblioInheritance
             p.UpdateStatus();
 
             Console.WriteLine(p.Status);
+
+            Video v = new Video(title: "Ex Machina", director: "Alex Garland", category: "Sci-Fi", runtime: 100, mediaType: "On-Demand");
+            v.GetInfo();
         }
     }
 }
