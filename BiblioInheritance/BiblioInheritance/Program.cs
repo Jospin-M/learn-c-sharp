@@ -13,6 +13,11 @@ namespace BiblioInheritance
 
             Book b = new Book("Code: The Hidden Language of Computer Hardware and Software", "Non-Fiction", "Charles Petzold", 396);
             b.GetInfo();
+
+            Periodical p = new Periodical("Wired", "Technology", "Monthly");
+            p.UpdateStatus();
+
+            Console.WriteLine(p.Status);
         }
     }
 }
