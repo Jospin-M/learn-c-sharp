@@ -1,6 +1,6 @@
 ﻿namespace RoverControlCenter
 {
-    class Satellite
+    class Satellite : Probe, IDirectable
     {
         public string Alias
         { get; private set; }

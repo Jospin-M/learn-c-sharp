@@ -1,6 +1,6 @@
 ﻿namespace RoverControlCenter
 {
-    class Rover
+    class Rover : Probe, IDirectable
     {
         public string Alias
         { get; private set; }
