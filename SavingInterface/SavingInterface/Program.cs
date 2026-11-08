@@ -10,6 +10,15 @@ internal class Program
         tdl.Add("Buy decorations");
         tdl.Add("Party");
 
-        PasswordManager pm = new PasswordManager("iluvpie", true);
+        PasswordManager pm = new("iluvpie", true);
+
+        tdl.Display();
+        pm.Display();
+
+        tdl.Reset();
+        pm.Reset();
+
+        tdl.Display();
+        pm.Display();
     }
 }

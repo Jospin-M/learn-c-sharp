@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SavingInterface
 {
-    internal class TodoList
+    internal class TodoList : IDisplayable, IResetable
     {
         public string[] Todos { get; private set; }
         private int nextOpenIndex;
@@ -19,6 +19,20 @@ namespace SavingInterface
         {
             Todos[nextOpenIndex] = todo;
             nextOpenIndex++;
+        }
+
+        public void Display()
+        {
+            foreach(string todo in Todos)
+            {
+                Console.WriteLine(todo);
+            }
+        }
+
+        public void Reset()
+        {
+            Todos = [];
+            nextOpenIndex = 0;
         }
     }
 }

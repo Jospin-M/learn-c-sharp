@@ -6,5 +6,6 @@ namespace SavingInterface
 {
     internal interface IDisplayable
     {
+        public void Display();
     }
 }

@@ -6,5 +6,6 @@ namespace SavingInterface
 {
     internal interface IResetable
     {
+        public void Reset();
     }
 }
