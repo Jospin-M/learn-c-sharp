@@ -64,7 +64,55 @@ namespace LibraryManagementSystem
 
         public bool CheckOutBook(string ISBN)
         {
+            foreach(Book book in _catalog)
+            {
+                if(book.ISBN == ISBN && book.IsCheckedOUt == true)
+                {
+                    Console.WriteLine($"{book} has already been checked out.");
+
+                    return false;
+                }
+                else if (book.ISBN == ISBN)
+                {
+                    book.IsCheckedOUt = true;
+
+                    Console.WriteLine($"{book} has been successfully checked out.");
+
+                    return true;
+                }
+            }
+
             return false;
+        }
+
+        public bool ReturnBook(string ISBN)
+        {
+            foreach(Book book in _catalog)
+            {
+                if(book.ISBN == ISBN)
+                {
+                    book.IsCheckedOUt = false;
+                    _reshelveCart.Push(book);
+
+                    Console.WriteLine($"{book} successfully returned.");
+
+                    return true;
+                }
+            }
+
+            Console.WriteLine($"No book with ISBN: {ISBN} was found.");
+
+            return false;
+        }
+
+        public void ProcessReshelveCart()
+        {
+            for(int i = 0; i < _reshelveCart.Count; i++)
+            {
+                Book resheled = _reshelveCart.Pop();
+
+                Console.WriteLine($"Reshelved book: {resheled}");
+            }
         }
     }
 }

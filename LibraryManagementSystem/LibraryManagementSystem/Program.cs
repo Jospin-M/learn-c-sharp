@@ -38,5 +38,11 @@ internal class Program
 
         Console.WriteLine("\n=== Test Book Circulation ===");
         // Test checkout and returns here
+        Console.WriteLine(library.CheckOutBook("456"));
+        Console.WriteLine(library.CheckOutBook("456"));
+
+        library.CheckOutBook("123");
+        library.ReturnBook("123");
+        library.ProcessReshelveCart();
     }
 }

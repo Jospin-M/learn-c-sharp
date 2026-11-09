@@ -24,7 +24,7 @@ namespace LibraryManagementSystem
 
         public override string ToString()
         {
-            return $"{Title} by {Author} (ISBN: {ISBN}, Category: {Category}";
+            return $"{Title} by {Author} (ISBN: {ISBN}, Category: {Category})";
         }
     }
 }
