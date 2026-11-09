@@ -4,28 +4,27 @@ using System.Text;
 
 namespace LibraryManagementSystem
 {
-    internal class Library
+    internal class Book
     {
-        private List<Book> Books { get; set; }
+        public string ISBN { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string Category { get; set; }
+        public bool IsCheckedOUt { get; set; }
 
-        public Library()
+        public Book()
         {
-            Books = [];
+            ISBN = "";
+            Title = "";
+            Author = "";
+            Category = "";
+            IsCheckedOUt = false;
         }
 
-        public void AddBook(Book book)
-        {
-            Books.Add(book);
-        }
 
-        public List<Book> SearchBookByTitle(string title)
+        public override string ToString()
         {
-            return Books.FindAll(b => b.Title == title);
-        }
-
-        public void DisplayAllBooks()
-        {
-            Books.ForEach(book => Console.WriteLine(book.Title));
+            return $"{Title} by {Author} (ISBN: {ISBN}, Category: {Category}";
         }
     }
 }
