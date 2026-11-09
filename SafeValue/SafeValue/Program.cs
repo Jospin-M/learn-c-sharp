@@ -16,7 +16,7 @@
             SafeValue<ValidatableAmount> sv = new SafeValue<ValidatableAmount>(v);
 
             ValidatableAmount v2 = new ValidatableAmount(1, 0, 0);
-            SafeValue<ValidatableAmount> sv2 = new SafeValue<ValidatableAmount>(v2)
+            SafeValue<ValidatableAmount> sv2 = new SafeValue<ValidatableAmount>(v2);
         }
     }
 }

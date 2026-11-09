@@ -16,7 +16,7 @@ namespace LibraryManagementSystem
         public void AddBook(Book book)
         {
             Books.Add(book);
-        }   
+        }
 
         public List<Book> SearchBookByTitle(string title)
         {

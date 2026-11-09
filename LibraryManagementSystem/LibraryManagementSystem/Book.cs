@@ -6,13 +6,23 @@ namespace LibraryManagementSystem
 {
     internal class Book
     {
+        public string ISBN { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
+        public string Category { get; set; }
+        public bool IsCheckedOUt { get; set; }
 
-        public Book(string title, string author)
+        public override string ToString()
         {
-            Title = title;
-            Author = author;
+            return $"{Title} by {Author} (ISBN: {ISBN}, Category: {Category}";
         }
     }
+
+    internal class LibrarySystem
+    {
+        public LibrarySystem()
+        {
+
+        }
+    }   
 }

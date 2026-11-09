@@ -2,17 +2,34 @@
 
 internal class Program
 {
-    static void Main(string[] args) 
+    static void Main(string[] args)
     {
-        Library library = new Library();
-        library.AddBook(new Book("1984", "George Orwell"));
-        library.AddBook(new Book("To Kill a Mockingbird", "Harper Lee"));
-
-        List<Book> results = library.SearchBookByTitle("1984");
-
-        foreach(Book result in results)
+        Book book1 = new Book
         {
-            Console.WriteLine(result.Title);
-        }
+            ISBN = "123",
+            Title = "Whispers of the Cosmic Winds",
+            Author = "Elena Starling",
+            Category = "Science Fiction"
+        };
+
+        Book book2 = new Book
+        {
+            ISBN = "456",
+            Title = "The Last Algorithm",
+            Author = "Marcus Chen",
+            Category = "Technology"
+        };
+
+        Console.WriteLine("\n=== Add Books to Catalog ===");
+        // Test add books here
+
+        Console.WriteLine("\n=== Display Catalog ===");
+        // Test catalog display here
+
+        Console.WriteLine("\n=== Display Books by Category ===");
+        // Test category display here
+
+        Console.WriteLine("\n=== Test Book Circulation ===");
+        // Test checkout and returns here
     }
 }
