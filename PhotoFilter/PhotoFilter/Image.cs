@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace PhotoFilter
@@ -24,10 +25,7 @@ namespace PhotoFilter
           $"Image[B:{Brightness:F2}, C:{Contrast:F2}, S:{Saturation:F2}]";
 
         // Task 1: Basic expression-bodied method
-        public Image CreateBrighterVersion()
-        {
-            return new Image();
-        }
+        public Image CreateBrighterVersion() => this.AddBrightness(Brightness * 0.2);
 
         // Task 2: Method chaining with multiple adjustments
         public Image AddBrightness(double brightAmount) =>
@@ -46,10 +44,8 @@ namespace PhotoFilter
               Saturation = this.Saturation + satAmount
           };
 
-        public Image BrightenThenSaturate(double brightAmount, double satAmount)
-        {
-            return this;
-        }
+        public Image BrightenThenSaturate(double brightAmount, double satAmount) => AddBrightness(brightAmount).AddSaturation(satAmount);
 
+        public Image TransformBrightness(Func<double, double> transformation) => new Image { Brightness = transformation(Brightness) };
     }
 }
