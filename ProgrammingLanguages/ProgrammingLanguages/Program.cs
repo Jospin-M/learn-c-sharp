@@ -14,6 +14,11 @@ namespace ProgrammingLanguages
               .Skip(1)
               .Select(line => Language.FromTsv(line))
               .ToList();
+
+            foreach(Language lang in languages)
+            {
+                lang.Prettify();
+            }
         }
     }
 }
